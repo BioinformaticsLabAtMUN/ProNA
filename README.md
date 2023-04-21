@@ -1,7 +1,7 @@
 # ProNA
 Machine-learning based model for predicting interactions between bacterial sRNAs and proteins. ProNA accepts two different fasta file, one for protein sequences and the other for RNA sequences. The output is a csv file which has all the possible pairings taken from two input fasta files.
 ## Setup
-To run this script, you can download Anaconda from  [here](https://www.anaconda.com/download/)
+for running this script, you can download Anaconda from  [here](https://www.anaconda.com/download/)
 ## Necessaries
 * Python 3
 * os
@@ -30,4 +30,4 @@ MKLVRFLMKLSHETVTIELKNGTQVHGTITGVDVSMNTHLKAVKMTLKNREPVQLETLSIRGNNIRYFILPDSLPLDTLL
 ProNA result will be saved in a dataframe below characteristics:
 * Rows (4 rows): sRNA ID, protein ID, Propability of interaction, and Propability of non-interaction. 
 * Columns: RNA sequences times protein sequences.
-**Note: The output is sorted based on probability of interaction.
+**Note: The output is sorted based on probability of interaction.**
