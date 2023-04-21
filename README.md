@@ -30,4 +30,5 @@ MKLVRFLMKLSHETVTIELKNGTQVHGTITGVDVSMNTHLKAVKMTLKNREPVQLETLSIRGNNIRYFILPDSLPLDTLL
 ProNA result will be saved in a dataframe below characteristics:
 * Rows (4 rows): sRNA ID, protein ID, Propability of interaction, and Propability of non-interaction. 
 * Columns: RNA sequences times protein sequences.
+
 **Note: The output is sorted based on probability of interaction.**
