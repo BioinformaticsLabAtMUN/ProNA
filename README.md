@@ -32,3 +32,16 @@ ProNA result will be saved in a dataframe below characteristics:
 * Columns: RNA sequences times protein sequences.
 
 **Note: The output is sorted based on probability of interaction.**
+Here is a sample output file for two given file:
+```
+2IY5-T  3CW1-O  0.9571418 0.0428581
+2IY5-T  3CW1-N  0.6550656 0.3449343
+1TRN-R  3CW1-O  0.4539958 0.5460042
+1TRN-R  3CW1-N  0.1448176 0.8551823
+```
+*First two pairs will interact with each other, but no interaction will happen for second two pairs.*
+
+
+
+
+
