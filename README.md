@@ -4,7 +4,7 @@ Machine-learning based model for predicting interactions between bacterial sRNAs
 for running this script, you can download Anaconda from  [here](https://www.anaconda.com/download/)
 ## Necessaries
 * Python 3
-* os
+* Os
 * Collections
 * Numpy
 * Math
