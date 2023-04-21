@@ -12,7 +12,7 @@ for running this script, you can download Anaconda from  [here](https://www.anac
 * Pandas
 * Joblib
 ## Usage
-To run the script, you need to first enter sRNA fasta file and then protein fasta file. For example sRNA fasta file with two sequences would look like:
+To run the script, you need to first enter sRNA fasta file and then protein fasta file. For example sRNA fasta file with two sequences would looks like this:
 ```
 >2IY5-T
 GCCGAGGTAGCTCAGTTGGTAGAGCATGCGACTGAAAATCGCAGTGTCCGCGGTTCGATTCCGCGCCTCGGCACCA
