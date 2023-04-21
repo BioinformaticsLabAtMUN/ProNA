@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[8]:
-
-
 import os
 import re
 from collections import Counter
@@ -1156,16 +1150,6 @@ if __name__ == '__main__':
    
   
     
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
