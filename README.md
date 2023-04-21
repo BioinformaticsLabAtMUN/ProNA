@@ -9,3 +9,5 @@ Machine-learning based model for predicting interactions between bacterial sRNAs
 * Random
 * Pandas
 * Joblib
+## Usage
+To run the script, you need to first enter srna fasta file and then protein fasta file.
