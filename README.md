@@ -11,8 +11,9 @@ For running ProNA, you can download Anaconda from  [here](https://www.anaconda.c
 * Random
 * Pandas
 * Joblib
+* xgboost 1.7.5
 ## Usage
-To run ProNA, you need to enter a fasta file  with the sRNA sequences and then a fasta file with the protein sequences. For example sRNA fasta file with two sequences might look like this:
+To run ProNA, you need a fasta file  with the sRNA sequences and then a fasta file with the protein sequences. For example sRNA fasta file with two sequences might look like this:
 ```
 >2IY5-T
 GCCGAGGTAGCTCAGTTGGTAGAGCATGCGACTGAAAATCGCAGTGTCCGCGGTTCGATTCCGCGCCTCGGCACCA
@@ -25,6 +26,15 @@ and a protein fasta file with two sequences migth look like this:
 MKLVRFLMKLSHETVTIELKNGTQVHGTITGVDVSMNTHLKAVKMTLKNREPVQLETLSIRGNNIRYFILPDSLPLDTLLVDVEPKVKSKKREAVAGRGRGRGRGRGRGRGRGRGGPRR
 >3CW1-N
 MKLVRFLMKLSHETVTIELKNGTQVHGTITGVDVSMNTHLKAVKMTLKNREPVQLETLSIRGNNIRYFILPDSLPLDTLLVDVEPKVKSKKREAVAGRGRGRGRGRGRGRGRGRGGPRR
+```
+In the command line, type:
+```
+python3 ProNA.py
+```
+Then you will be prompted to enter the fasta files:
+```
+Enter your sRNA file: sRNAs.fasta
+Enter your protein file: Proteins.fasta
 ```
 ## Result
 ProNA result will consists of:
