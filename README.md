@@ -11,7 +11,7 @@ For running ProNA, you can download Anaconda from  [here](https://www.anaconda.c
 * Random
 * Pandas 1.4.4
 * Joblib 1.1.0
-* xgboost 
+* xgboost 1.7.3
 ## Usage
 To run ProNA, you need a fasta file  with the sRNA sequences and then a fasta file with the protein sequences. For example sRNA fasta file with two sequences might look like this:
 ```
