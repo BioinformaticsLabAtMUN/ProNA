@@ -37,8 +37,8 @@ Enter your sRNA file: sRNAs.fasta
 Enter your protein file: Proteins.fasta
 ```
 ## Result
-ProNA result will consists of:
-* Rows (4 rows): sRNA ID, protein ID, Probability of interaction, and Propability of non-interaction. 
+ProNA result consists of:
+* Rows (4 rows): sRNA ID, protein ID, Probability of interaction, and Probability of non-interaction. 
 * Columns: RNA sequences times protein sequences.
 
 **Note: The output is sorted based on probability of interaction.**
