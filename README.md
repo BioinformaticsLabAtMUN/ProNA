@@ -12,7 +12,7 @@ For running ProNA, you can download Anaconda from  [here](https://www.anaconda.c
 * Pandas
 * Joblib
 ## Usage
-To run ProNA, you need to first enter sRNA fasta file and then protein fasta file. For example sRNA fasta file with two sequences might look like this:
+To run ProNA, you need to enter a fasta file  with the sRNA sequences and then a fasta file with the protein sequences. For example sRNA fasta file with two sequences might look like this:
 ```
 >2IY5-T
 GCCGAGGTAGCTCAGTTGGTAGAGCATGCGACTGAAAATCGCAGTGTCCGCGGTTCGATTCCGCGCCTCGGCACCA
