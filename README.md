@@ -5,10 +5,10 @@ For running ProNA, you can download Anaconda from  [here](https://www.anaconda.c
 ## Requirements
 * Python 3.9.13
 * os
-* Collections
+* Collections 3.9.13
 * Numpy 1.21.5
-* Math
-* Random
+* Math 3.9.13
+* Random 3.9.13
 * Pandas 1.4.4
 * Joblib 1.1.0
 * xgboost 1.7.3
