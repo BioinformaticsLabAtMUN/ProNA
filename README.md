@@ -3,7 +3,7 @@ A machine-learning based model for predicting interactions between bacterial sRN
 ## Setup
 For running ProNA, you can download Anaconda from  [here](https://www.anaconda.com/download/)
 ## Requirements
-* Python 3
+* Python 3.9.13
 * os
 * Collections
 * Numpy 1.21.5
