@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import os
 import re
 from collections import Counter
@@ -13,8 +7,6 @@ import random
 import pandas as pd
 import joblib
 
-
-# In[3]:
 
 
 class Sequence(object):
@@ -103,9 +95,6 @@ class Sequence(object):
             return 'Unknown'
 
 
-# In[4]:
-
-
 class Descriptor(Sequence):
     def __init__(self, file, kw):
         super(Descriptor, self).__init__(file=file)
@@ -170,8 +159,6 @@ class Descriptor(Sequence):
             self.error_msg = str(e)
             return False
 
-
-# In[5]:
 
 
 
@@ -254,51 +241,45 @@ class Descriptor(Sequence):
          return False
 
 
-# In[6]:
 
-
-
-    def Protein_GAAC(self):
-try:
-    self.encoding_array = np.array([])
-    group = {
+def Protein_GAAC(self):
+    try:
+        self.encoding_array = np.array([])
+        group = {
         'alphatic': 'GAVLMI',
         'aromatic': 'FYW',
         'postivecharge': 'KRH',
         'negativecharge': 'DE',
         'uncharge': 'STCPNQ'
-    }
-    groupKey = group.keys()
-    encodings = []
-    header = ['SampleName', 'label']
-    for key in groupKey:
-        header.append(key)
-    encodings.append(header)
-    for i in self.fasta_list:
-        name, sequence, label = i[0], re.sub('-', '', i[1]), i[2]
-        code = [name, label]
-        count = Counter(sequence)
-        myDict = {}
+        }
+        groupKey = group.keys()
+        encodings = []
+        header = ['SampleName', 'label']
         for key in groupKey:
-            for aa in group[key]:
-                myDict[key] = myDict.get(key, 0) + count[aa]
-        for key in groupKey:
-            code.append(myDict[key] / len(sequence))
-        encodings.append(code)
-    self.encoding_array = np.array(encodings, dtype=str)
-    self.column = self.encoding_array.shape[1]
-    self.row = self.encoding_array.shape[0] - 1
-    del encodings
-    if self.encoding_array.shape[0] > 1:
-        return True
-    else:
+            header.append(key)
+        encodings.append(header)
+        for i in self.fasta_list:
+            name, sequence, label = i[0], re.sub('-', '', i[1]), i[2]
+            code = [name, label]
+            count = Counter(sequence)
+            myDict = {}
+            for key in groupKey:
+                for aa in group[key]:
+                    myDict[key] = myDict.get(key, 0) + count[aa]
+            for key in groupKey:
+                code.append(myDict[key] / len(sequence))
+            encodings.append(code)
+        self.encoding_array = np.array(encodings, dtype=str)
+        self.column = self.encoding_array.shape[1]
+        self.row = self.encoding_array.shape[0] - 1
+        del encodings
+        if self.encoding_array.shape[0] > 1:
+            return True
+        else:
+            return False
+    except Exception as e:
+        self.error_msg = str(e)
         return False
-except Exception as e:
-    self.error_msg = str(e)
-    return False
-
-
-# In[7]:
 
 
 
@@ -580,7 +561,6 @@ except Exception as e:
            return False
 
 
-# In[8]:
 
 
 def Protein_CTDD(self):
@@ -662,9 +642,6 @@ def Protein_CTDD(self):
     except Exception as e:
         self.error_msg = str(e)
         return False
-
-
-# In[9]:
 
 
 
@@ -816,10 +793,6 @@ def Protein_CTDD(self):
           return False
 
 
-# In[10]:
-
-
-
    def CKSNAP(self):
        try:
            gap=3
@@ -869,9 +842,6 @@ def Protein_CTDD(self):
            return False
 
 
-# In[11]:
-
-
 
   def ASDC(self):
       try:
@@ -911,9 +881,6 @@ def Protein_CTDD(self):
       except Exception as e:
           self.error_msg = str(e)
           return False
-
-
-# In[12]:
 
 
 
@@ -989,9 +956,6 @@ def Protein_CTDD(self):
        except Exception as e:
            self.error_msg = str(e)
            return False
-
-
-# In[18]:
 
 
 def get_data(self):
@@ -1104,25 +1068,7 @@ print(result_sorted)
   
 
 
-# In[ ]:
 
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
