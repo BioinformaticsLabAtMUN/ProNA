@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import os
 import re
 from collections import Counter
@@ -1153,18 +1147,4 @@ if __name__ == '__main__':
     result_sorted.to_csv('ProNA_results.tsv',sep= "\t",index=False)
     print(result_sorted) 
    
-  
-    
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
